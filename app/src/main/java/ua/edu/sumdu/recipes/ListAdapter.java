@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -27,11 +28,14 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         public final CardView mCard;
         public final TextView mTitle, mBrief;
 
+        public final ImageView mImage;
+
         public ViewHolder(View itemView) {
             super(itemView);
             mCard = itemView.findViewById(R.id.card);
             mTitle = itemView.findViewById(R.id.title);
             mBrief = itemView.findViewById(R.id.brief);
+            mImage = itemView.findViewById(R.id.image);
         }
     }
 
@@ -53,6 +57,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         Recipe mCurrent = mWordList.get(position);
         holder.mTitle.setText(mCurrent.getTitle());
         holder.mBrief.setText(mCurrent.getBrief());
+        holder.mImage.setImageDrawable(holder.mImage.getContext().getDrawable(R.drawable.ic_breakfast));
         holder.mCard.setOnClickListener(view -> mOnItemClick.OnItemClicked(mCurrent));
     }
 

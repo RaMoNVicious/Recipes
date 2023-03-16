@@ -35,6 +35,7 @@ public class RecipeActivity extends AppCompatActivity {
 
     private void showRecipe(Recipe recipe) {
         setTitle(recipe.getTitle());
+        mImage.setImageDrawable(getDrawable(R.drawable.ic_breakfast));
         mBrief.setText(recipe.getBrief());
         mDescription.setText(recipe.getRecipe());
     }
