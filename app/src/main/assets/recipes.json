@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Spaghetti Bolognese",
+    "brief": "Classic Italian pasta dish with meat sauce.",
+    "recipe": "Cook spaghetti according to package directions. Meanwhile, heat oil in a large skillet over medium heat. Add onion and garlic; cook until onion is tender. Add ground beef and cook until browned. Stir in crushed tomatoes, tomato sauce, and tomato paste. Add Italian seasoning, salt, and pepper to taste. Simmer for 15-20 minutes. Serve meat sauce over spaghetti and sprinkle with Parmesan cheese.",
+    "image": "https://example.com/spaghetti-bolognese.jpg"
+  },
+  {
+    "title": "Chicken Alfredo",
+    "brief": "Creamy pasta dish with chicken and Parmesan cheese.",
+    "recipe": "Cook fettuccine according to package directions. Meanwhile, season chicken with salt and pepper. Heat oil in a large skillet over medium-high heat. Add chicken and cook until browned and cooked through. Remove chicken from skillet and set aside. Add butter to skillet and melt. Add garlic and cook until fragrant. Add cream and Parmesan cheese; cook until sauce is thickened. Return chicken to skillet and toss to coat. Serve sauce over fettuccine.",
+    "image": "https://example.com/chicken-alfredo.jpg"
+  },
+  {
+    "title": "Lasagna",
+    "brief": "Classic Italian baked pasta dish with meat sauce and cheese.",
+    "recipe": "Cook lasagna noodles according to package directions. Meanwhile, heat oil in a large skillet over medium heat. Add onion and garlic; cook until onion is tender. Add ground beef and cook until browned. Stir in crushed tomatoes, tomato sauce, and tomato paste. Add Italian seasoning, salt, and pepper to taste. Simmer for 15-20 minutes. In a separate bowl, combine ricotta cheese, egg, and parsley. Preheat oven to 375°F. In a 9x13 inch baking dish, layer noodles, meat sauce, and ricotta mixture. Repeat layers, ending with a layer of meat sauce. Top with mozzarella cheese. Bake for 25-30 minutes, or until cheese is melted and bubbly.",
+    "image": "https://example.com/lasagna.jpg"
+  },
+  {
+    "title": "Taco Salad",
+    "brief": "Mexican-inspired salad with ground beef and taco seasoning.",
+    "recipe": "Heat oil in a large skillet over medium heat. Add ground beef and cook until browned. Drain any excess fat. Add taco seasoning and water; cook until sauce is thickened. In a separate bowl, mix together lettuce, tomatoes, cheese, and crushed tortilla chips. Serve beef mixture over salad and top with sour cream and salsa.",
+    "image": ""
+  },
+  {
+    "title": "Roasted Chicken",
+    "brief": "Classic roasted chicken with herbs and lemon.",
+    "recipe": "Preheat oven to 425°F. Rinse chicken and pat dry. Rub chicken with olive oil and season with salt, pepper, and your choice of herbs, such as thyme or rosemary. Cut lemon into wedges and place inside chicken cavity. Tie legs together with kitchen twine. Place chicken on a rack in a roasting pan. Roast for 1 hour and 15 minutes, or until internal temperature reaches 165°F. Let chicken rest for 10 minutes before carving.",
+    "image": "https://example.com/roasted-chicken.jpg"
+  },
+  {
+    "title": "Fish Tacos",
+    "brief": "Mexican-inspired tacos with grilled fish and cabbage slaw.",
+    "recipe": "Preheat grill to medium-high heat. Brush fish fillets with olive oil and season with salt and pepper. Grill fish for 3-4 minutes per side, or until cooked through. In a separate bowl, mix together shredded cabbage, lime juice, and salt. Warm tortillas on the grill. Assemble tacos with fish, cabbage slaw, avocado, and cilantro. Serve with lime wedges.",
+    "image": "https://example.com/fish-tacos.jpg"
+  },
+  {
+    "title": "Vegetable Curry",
+    "brief": "Indian-inspired curry with vegetables and coconut milk.",
+    "recipe": "Heat oil in a large skillet over medium heat. Add onion, garlic, and ginger; cook until onion is tender. Add your choice of vegetables, such as carrots, potatoes, and bell peppers. Cook until vegetables are tender. Stir in curry powder and cook for 1 minute. Add coconut milk and bring to a simmer. Simmer for 10-15 minutes, or until sauce is thickened. Serve curry over rice.",
+    "image": "https://example.com/vegetable-curry.jpg"
+  },
+  {
+    "title": "Beef Tacos",
+    "brief": "Mexican-inspired tacos with seasoned ground beef and toppings.",
+    "recipe": "Heat oil in a large skillet over medium heat. Add ground beef and cook until browned. Drain any excess fat. Stir in taco seasoning and water. Simmer for 10-15 minutes, or until sauce is thickened. Warm tortillas on the skillet. Assemble tacos with beef, shredded lettuce, cheese, tomatoes, and sour cream.",
+    "image": "https://example.com/beef-tacos.jpg"
+  },
+  {
+    "title": "Tomato Soup",
+    "brief": "Classic creamy tomato soup with basil.",
+    "recipe": "Heat butter in a large saucepan over medium heat. Add onion and garlic; cook until onion is tender. Add canned crushed tomatoes and chicken broth. Bring to a simmer and cook for 15-20 minutes. Remove from heat and let cool slightly. Blend soup with an immersion blender or in batches in a regular blender. Return soup to saucepan and stir in cream and chopped basil. Season with salt and pepper to taste. Serve with croutons, if desired.",
+    "image": "https://example.com/tomato-soup.jpg"
+  }
+]

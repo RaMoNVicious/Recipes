@@ -6,42 +6,36 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.LinkedList;
+import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
 
     public interface OnItemClick {
-        void OnItemClicked(Object recipe);
+        void OnItemClicked(Recipe recipe);
     }
 
-    private final LinkedList<Object> mWordList;
+    private final List<Recipe> mWordList;
 
     private final LayoutInflater mInflater;
 
     private final OnItemClick mOnItemClick;
 
-    class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        public final TextView wordItemView;
-        final ListAdapter mAdapter;
+    class ViewHolder extends RecyclerView.ViewHolder {
+        public final CardView mCard;
+        public final TextView mTitle, mBrief;
 
-        public ViewHolder(View itemView, ListAdapter adapter) {
+        public ViewHolder(View itemView) {
             super(itemView);
-            wordItemView = itemView.findViewById(R.id.word);
-            this.mAdapter = adapter;
-            itemView.setOnClickListener(this);
-        }
-
-        @Override
-        public void onClick(View view) {
-            int mPosition = getLayoutPosition();
-            Object element = mWordList.get(mPosition);
-            mOnItemClick.OnItemClicked(element);
+            mCard = itemView.findViewById(R.id.card);
+            mTitle = itemView.findViewById(R.id.title);
+            mBrief = itemView.findViewById(R.id.brief);
         }
     }
 
-    public ListAdapter(Context context, LinkedList<Object> wordList, OnItemClick onItemClick) {
+    public ListAdapter(Context context, List<Recipe> wordList, OnItemClick onItemClick) {
         mInflater = LayoutInflater.from(context);
         mWordList = wordList;
         mOnItemClick = onItemClick;
@@ -51,13 +45,15 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     @Override
     public ListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View mItemView = mInflater.inflate(R.layout.list_item, parent, false);
-        return new ViewHolder(mItemView, this);
+        return new ViewHolder(mItemView);
     }
 
     @Override
     public void onBindViewHolder(ListAdapter.ViewHolder holder, int position) {
-        Object mCurrent = mWordList.get(position);
-        holder.wordItemView.setText(mCurrent.toString());
+        Recipe mCurrent = mWordList.get(position);
+        holder.mTitle.setText(mCurrent.getTitle());
+        holder.mBrief.setText(mCurrent.getBrief());
+        holder.mCard.setOnClickListener(view -> mOnItemClick.OnItemClicked(mCurrent));
     }
 
     @Override
