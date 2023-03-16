@@ -1,14 +1,14 @@
 package ua.edu.sumdu.recipes;
 
 import android.content.Intent;
-import android.util.Log;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,5 +49,4 @@ public class MainActivity extends AppCompatActivity {
                 new TypeToken<List<Recipe>>(){}.getType()
         );
     }
-
 }
